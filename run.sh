@@ -1,3 +1,8 @@
 #!/bin/sh
 
-run -d --rm --name atack.php atack.php
+
+docker rm atack.php
+docker rmi atack.php
+docker build -t atack.php .
+
+docker run -d --rm --name atack.php atack.php
