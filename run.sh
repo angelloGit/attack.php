@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-docker rm atack.php
+docker rm -f atack.php
 docker rmi atack.php
 docker build -t atack.php .
 
